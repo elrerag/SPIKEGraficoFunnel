@@ -1,1 +1,27 @@
-<p>telerik works!</p>
+
+<hr/>
+<div class="row">
+    <div class="col">
+        <h3><a target="_blank" href="{{enlace}}">Documentación acá.</a></h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+<kendo-chart>
+    <kendo-chart-title text="Sales funnel"></kendo-chart-title>
+    <kendo-chart-series>
+        <kendo-chart-series-item type="funnel" [data]="model" field="count" categoryField="stat" colorField="color">
+            <kendo-chart-series-item-labels background="none" color="white" format="N0">
+            </kendo-chart-series-item-labels>
+        </kendo-chart-series-item>
+    </kendo-chart-series>
+    <kendo-chart-tooltip>
+        <ng-template kendoChartSeriesTooltipTemplate let-category="category">
+            {{ category }}
+        </ng-template>
+    </kendo-chart-tooltip>
+    <kendo-chart-legend [visible]="false"></kendo-chart-legend>
+</kendo-chart>
+</div>
+</div>

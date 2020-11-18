@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./devexpress.component.css'],
 })
 export class DevexpressComponent implements OnInit {
+  public enlace = `https://js.devexpress.com/Demos/WidgetsGallery/Demo/Charts/FunnelChart/Angular/Light/`
   // datos para actualizar la información del gráfico
-  public data: itemInfo[] = [
+  public data = [
     { argument: 'Visited the Website', value: 9152 },
     { argument: 'Downloaded a Trial', value: 6879 },
     { argument: 'Contacted Support', value: 5121 },
